@@ -1,25 +1,44 @@
 package extra;
 
 public class Athlete {
-	 static int nextBibNumber;
-     static String raceLocation = "New York";
-     static String raceStartTime = "9.00am";
 
-     String name;
-     int speed;
-     int bibNumber;
+    static int nextBibNumber;
+    static Stri
+    ng raceLocation = "New York";
+    static String raceStartTime = "9.00am";
 
-Athlete (String name, int speed){
-     this.name = name;
-     this.speed = speed;
+    String name;
+    int speed;
+    int bibNumber;
+
+Athlete (String name, int speed, int bibNumber){
+    this.name = name;
+    this.speed = speed;
+    this.bibNumber= bibNumber;
 }
 
-public static void main(String[] args) {
-     //create two athletes      //print their names, bibNumbers, and the location of their race. }
+String name() {
+	return name;
 }
 
-public void speed(int i) {
-	// TODO Auto-generated method stub
-	
+int speed(int i) {
+	return speed;
 }
+
+int bibNumber() {
+	return bibNumber;
 }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
