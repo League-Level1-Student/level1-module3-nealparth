@@ -29,7 +29,7 @@ public class Jukebox implements Runnable {
 
 		// 3. Find an mp3 on your computer or on the Internet.
 		// 4. Create a Song
-
+        	   new Song("Travis Scott - Way Back.mp3");
 		// 5. Play the Song
 
 		/*
