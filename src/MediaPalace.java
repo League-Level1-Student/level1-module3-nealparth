@@ -22,7 +22,7 @@ import javax.swing.JLabel;
 public class MediaPalace {
 
 	public JLabel loadImageFromTheInternet(String imageURL) throws MalformedURLException {
-		URL url = new URL(imageURL);
+		URL url = new URL("download.jpg");
 		Icon icon = new ImageIcon(url);
 		return new JLabel(icon);
 	}

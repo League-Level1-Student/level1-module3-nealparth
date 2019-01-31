@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 public class MagicBox extends JPanel implements Runnable, MouseListener {
-JFrame frame= new JFrame();
+
 
 
 
@@ -37,11 +37,11 @@ JFrame frame= new JFrame();
 	 */
 
 	BufferedImage backgroundImage;
-
+	
 	public static void main(String[] args) throws Exception {
 		SwingUtilities.invokeLater(new MagicBox());
-	JFrame frame= new JFrame();
-)
+
+
 		
 	}
 
@@ -53,6 +53,8 @@ JFrame frame= new JFrame();
 		} catch (Exception w) {
 			System.err.println(w.getMessage());
 		}
+		
+		
 	}
 
 	private void createUI() {
@@ -62,6 +64,8 @@ JFrame frame= new JFrame();
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
+		frame.addMouseListener(this);
+	
 	}
 
 	private void loadBackgroundImage() throws Exception {
@@ -81,7 +85,7 @@ JFrame frame= new JFrame();
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+	
 	}
 
 	@Override
