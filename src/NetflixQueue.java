@@ -9,6 +9,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class NetflixQueue {
+	public static void main(String[] args) {
+		Movie movie1= new Movie("funny", 5);
+		movie1.getTicketPrice();
+		Movie movie2= new Movie("laugh",3);
+		Movie movie3= new Movie("sad",1);
+		Movie movie4= new Movie("dumb",2);
+		Movie movie5= new Movie("purposeful",4);
+	}
 	
 	ArrayList<Movie> movies = new ArrayList<Movie>();
 	
@@ -19,6 +27,9 @@ public class NetflixQueue {
 
 	public void addMovie(Movie movie) {
 		movies.add(movie);
+		
+		
+		
 	}
 	
 	public Movie getMovie(int movieNumber){

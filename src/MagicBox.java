@@ -14,6 +14,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -65,6 +66,8 @@ JFrame frame= new JFrame();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		frame.addMouseListener(this);
+		
+		
 	
 	}
 
@@ -85,6 +88,19 @@ JFrame frame= new JFrame();
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
+		if(e.getX()>56&&e.getX()<95&&e.getY()>78&&e.getY()<95) {
+			
+		
+		JFrame bot= new JFrame();
+		bot.pack();
+		bot.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		bot.setVisible(true);
+				MediaPalace palace= new MediaPalace();
+	System.out.println("clicked");
+	JLabel label= palace.loadImageFromWithinProject("download.jpg");	
+	bot.add(label);
+	bot.setSize(259,194);
+		}
 	
 	}
 
